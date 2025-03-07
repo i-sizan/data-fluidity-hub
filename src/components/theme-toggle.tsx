@@ -13,6 +13,7 @@ const ThemeToggle = () => {
       size="icon"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className="rounded-full transition-all duration-300"
+      title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
     >
       {theme === "dark" ? (
         <Sun className="h-5 w-5 text-yellow-400 animate-scale-in" />
